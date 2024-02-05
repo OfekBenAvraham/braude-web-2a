@@ -15,8 +15,6 @@
     <script>
       const fields = ["image", "symbol", "name", "summary"];
       const row = (k, v, i) => {
-        // complete tr string
-        //return `<tr>${Object.entries(v).filter(([k,v])=>fields.includes(k)).map(([k, v], i) => cell(k,v)).join('')}</tr>`
         return `<tr>${fields.map((f) => cell(k, f, v)).join("")}</tr>`;
       };
 
